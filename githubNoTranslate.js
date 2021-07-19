@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         谷歌翻译绕过代码块
+// @name         谷歌翻译忽略代码块和指定元素
 // @namespace    https://github.com/wangrongding/ding-script.git
-// @version      1.0
-// @description  使用谷歌翻译插件翻译网页时，绕过代码块和一些指定的无需翻译的元素
+// @version      1.1
+// @description  使用谷歌翻译插件翻译网页时，忽略代码块和一些指定的无需翻译的元素(Use Google translation plugin page, ignore the code block and some elements of the specified without translation.)
 // @author       汪荣顶
-// @homeurl      https://github.com/wangrongding/ding-script.git
-// @homeurl      https://greasyfork.org/zh-CN/scripts/
+// @homeurl      https://github.com/wangrongding/ding-script/blob/main/githubNoTranslate.js
+// @homeurl      https://greasyfork.org/zh-CN/scripts/429599
 // @match        https://github.com/*
 // @match        https://npmjs.com/*
 // @match        https://stackoverflow.com/*
@@ -56,9 +56,5 @@
             noTranslate(githubPluginSelector);
             noTranslate(passTransList);
         }, 1500);
-        console.log(
-            document.querySelectorAll(".text-bold"),
-            "********************"
-        );
     };
 })();
