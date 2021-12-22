@@ -2,7 +2,7 @@
 // @name         github一键在线编辑
 // @namespace    https://github.com/wangrongding/ding-script
 // @version      0.1
-// @description  github一键在线编辑
+// @description  github一键跳转在线编辑,实现在网页端上通过线上vsCode直观的对代码进行浏览与编译
 // @author       汪荣顶
 // @homeurl      https://github.com/wangrongding/ding-script/githubEditOnline.js
 // @license      MIT
