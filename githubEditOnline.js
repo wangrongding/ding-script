@@ -13,30 +13,41 @@
 // ==/UserScript==
 
 (function () {
-    "use strict";
-    var btn = document.createElement("BUTTON");
-    btn.innerText = "在线编辑";
-    btn.style.cssText = `
-            position: fixed;
-            bottom: 100px;
-            right: 100px;
-            background:#282C34;
-            width: 100px;
-            height: 50px;
-            color:white;
-            z-index:999;
-            font-weight:bold;
-            font-size:15px; 
-            line-height:50px;
-            border-radius:50px;
-            `;
-    setTimeout(() => {
-        btn.onclick = toOnlineEditor;
-    }, 2000);
-    document.body.appendChild(btn);
-    function toOnlineEditor() {
-        console.log("toOnlineEditor");
-        window.open(`${"https://github1s.com" + window.location.pathname}`);
-    }
-    // Your code here...
+  "use strict";
+  var btn = document.createElement("BUTTON");
+  btn.innerText = "在线编辑";
+  btn.style.cssText = `
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    // position: relative;
+    color:white;
+    color-scheme:dark;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: bolder;
+    font-size: 14px;
+    margin-left: 8px !important;
+    display: inline-block;
+    padding: 5px 16px;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid rgba(205, 217, 229, 0.1);
+    border-radius: 6px;
+    background: rgb(52, 125, 57);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    `;
+//   document.querySelector(".file-navigation").appendChild(btn);
+  document.body.appendChild(btn);
+  btn.onclick = toOnlineEditor;
+  function toOnlineEditor() {
+    console.log("toOnlineEditor");
+    window.open(`${"https://github1s.com" + window.location.pathname}`);
+  }
+  // Your code here...
 })();
