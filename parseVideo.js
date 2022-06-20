@@ -25,10 +25,9 @@
 // ==/UserScript==
 
 (function () {
-    "use strict";
-    var btn = document.createElement("BUTTON");
-    btn.innerText = "解析视频";
-    btn.style.cssText = `
+  const btn = document.createElement('BUTTON');
+  btn.innerText = '解析视频';
+  btn.style.cssText = `
             position: fixed;
             bottom: 100px;
             right: 100px;
@@ -42,13 +41,13 @@
             line-height:50px;
             border-radius:50px;
             `;
-    setTimeout(() => {
-        btn.onclick = toOnlineEditor;
-    }, 2000);
-    document.body.appendChild(btn);
-    function toOnlineEditor() {
-        // console.log("toOnlineEditor");
-        // window.open(`${"https://xxxxxxx.com" + window.location.pathname}`);
-    }
-    // Your code here...
-})();
+  setTimeout(() => {
+    btn.onclick = toOnlineEditor;
+  }, 2000);
+  document.body.appendChild(btn);
+  function toOnlineEditor() {
+    // console.log("toOnlineEditor");
+    // window.open(`${"https://xxxxxxx.com" + window.location.pathname}`);
+  }
+  // Your code here...
+}());

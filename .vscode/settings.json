@@ -1,2 +1,21 @@
-// Place your settings in this file to overwrite default and user settings.
-{}
+{
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  // stylelint 需要检查的文件
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass"],
+  "editor.formatOnSave": false,
+  "cSpell.words": [
+    "bglist",
+    "Commitlint",
+    "nprogress",
+    "Rong",
+    "Stylelint",
+    "unplugin",
+    "Vite",
+    "vitejs"
+  ]
+  // "prettier.enable": false
+}

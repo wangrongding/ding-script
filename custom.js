@@ -11,33 +11,31 @@
 // ==/UserScript==
 
 (function () {
-    "use strict";
-    //=======================================================================
+  //= ======================================================================
 
-    let input = document.getElementById("searchTxt");
-    input.style.cssText =
-        "width:500px;height:40px;border:1px solid white;margin-right:50px;";
-    input.focus();
-    input.onkeydown = function (event) {
-        var e = event || window.event;
-        if (e && e.keyCode == 13) {
-            document.getElementById("spanSearch").click();
-        } else if (e && e.keyCode == 27) {
-            input.focus();
-        }
-    };
-    let select = document.getElementById("sbu-group-sel");
-    document.body.onkeydown = function (e) {
-        if (e && e.keyCode == 27) {
-            input.focus();
-        } else if (e && e.keyCode == 32) {
-            select.focus();
-        } else if (e && e.keyCode == 192) {
-            input.focus();
-        } else if (e && e.keyCode == 13) {
-            document.getElementById("spanSearch").click();
-        }
-    };
+  const input = document.getElementById('searchTxt');
+  input.style.cssText = 'width:500px;height:40px;border:1px solid white;margin-right:50px;';
+  input.focus();
+  input.onkeydown = function (event) {
+    const e = event || window.event;
+    if (e && e.keyCode === 13) {
+      document.getElementById('spanSearch').click();
+    } else if (e && e.keyCode === 27) {
+      input.focus();
+    }
+  };
+  const select = document.getElementById('sbu-group-sel');
+  document.body.onkeydown = function (e) {
+    if (e && e.keyCode === 27) {
+      input.focus();
+    } else if (e && e.keyCode === 32) {
+      select.focus();
+    } else if (e && e.keyCode === 192) {
+      input.focus();
+    } else if (e && e.keyCode === 13) {
+      document.getElementById('spanSearch').click();
+    }
+  };
 
-    //=======================================================================
-})();
+  //= ======================================================================
+}());

@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "format": "prettier --write src",
+    "lint": "eslint **/*.js --fix",
+    "lintAll": "eslint . --ext .vue,.js,.ts,.jsx,.tsx src/ --fix",
+    "fal": "npm run format && npm run stylelint && npm run lint",
+    "prepare": "husky install",
+    "preinstall": "npx npm-limit yarn",
+    "cz": "cz"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2"
+  }
+}

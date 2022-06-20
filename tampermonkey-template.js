@@ -15,7 +15,7 @@
 // ==/UserScript==
 
 (function () {
-    "use stric";
-    //script template by 汪荣顶
-    //Your code here...
-})();
+  'use stric';
+  // script template by 汪荣顶
+  // Your code here...
+}());

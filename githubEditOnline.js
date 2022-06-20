@@ -13,9 +13,8 @@
 // ==/UserScript==
 
 (function () {
-  "use strict";
-  var btn = document.createElement("BUTTON");
-  btn.innerText = "在线编辑";
+  const btn = document.createElement('BUTTON');
+  btn.innerText = '在线编辑';
   btn.style.cssText = `
     position: fixed;
     bottom: 100px;
@@ -42,12 +41,23 @@
     -moz-appearance: none;
     appearance: none;
     `;
-//   document.querySelector(".file-navigation").appendChild(btn);
+  //   document.querySelector(".file-navigation").appendChild(btn);
+  /*
+
+    // insert into DOM //
+    // locate file navigation
+    let nav = document.getElementsByClassName("file-navigation")[0] || document.getElementsByClassName("gh-header-actions")[0];
+
+    // insert element
+    if (nav !== undefined) {
+        nav.append(a_element);
+    }
+
+*/
   document.body.appendChild(btn);
   btn.onclick = toOnlineEditor;
   function toOnlineEditor() {
-    console.log("toOnlineEditor");
-    window.open(`${"https://github1s.com" + window.location.pathname}`);
+    window.open(`${`https://github1s.com${window.location.pathname}`}`);
   }
   // Your code here...
-})();
+}());

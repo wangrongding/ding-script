@@ -15,10 +15,11 @@
 // ==/UserScript==
 
 (function () {
-    "use stric";
-    //script template by 汪荣顶
-    //Your code here...
-    setInterval(() => {
-        window.location.reload();
-    }, 500);
-})();
+  'use stric';
+
+  // script template by 汪荣顶
+  // Your code here...
+  setInterval(() => {
+    window.location.reload();
+  }, 500);
+}());
