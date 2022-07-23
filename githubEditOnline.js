@@ -10,6 +10,7 @@
 // @icon         http://ww1.sinaimg.cn/large/75314ac9ly1gsoywgjgl3j205k05kaab.jpg
 // @require      file://E:\Noah-Programs\ding-script\githubEditOnline.js
 // @grant        none
+// @run-at       document-end
 // ==/UserScript==
 
 (function () {
